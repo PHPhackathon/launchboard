@@ -6,6 +6,14 @@
 
 <!-- CODE -->
 <div id='module_twitterhash' class='h.two w_one'>
+    
+    <?php
+    
+    
+    
+    ?>
+    
+    
     <span id='time'></span>
 </div>
 <!-- /CODE -->
