@@ -10,9 +10,20 @@
 <script src="/assets/js/highcharts.js"></script>
 
 <script>
+var analyticsChart;
+
+function updateAnalytics() {
+
+    sUrl = $('#select_analytics').val();
+
+    $.getJSON( location.protocol + '//' + location.host + '/analytics/?site=' + sUrl, function(response) {
+         analyticsChart.series[0].setData(response.data, false);
+         analyticsChart.xAxis[0].setCategories(response.cats);
+    });
+}
 
 $(document).ready(function() {
-    var analyticsChart = new Highcharts.Chart({
+    analyticsChart = new Highcharts.Chart({
         chart: {
             renderTo: 'analytics_chart',
             defaultSeriesType: 'line'
@@ -37,25 +48,25 @@ $(document).ready(function() {
             }
         },
         series: [{
-             data: []
+            name: 'Analytics',
+            data: []
         }]
     });
-      
-    $.getJSON( location.protocol + '//' + location.host + '/analytics/?site=martijnc.be', function(response) {
-
-    });
-      
+    
+    updateAnalytics();
+    
+    $('#select_analytics').change(updateAnalytics);
 });
 </script>
 <!-- /JS -->
 
 <!-- CODE -->
-<div id="module_analtyics" class="box h_one w_four">
-    <select>
+<div id="module_analytics" class="box h_one w_four">
+    <select id="select_analytics">
     <?php
         foreach($aUrls as $sUrl => $sTableId) {
     ?>
-            <option id="<?=$sUrl?>"><?=$sUrl?></option>
+            <option value="<?=$sUrl?>"><?=$sUrl?></option>
     <?php
         } // end foreach
     ?>

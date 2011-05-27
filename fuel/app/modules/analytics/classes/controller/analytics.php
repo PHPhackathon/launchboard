@@ -38,7 +38,7 @@ class Controller_Analytics extends \Controller_LaunchBoard {
                     unset($_SESSION);
                 }
                 
-                die(var_dump($aResult));
+                die(json_encode(array('cats' => array_keys($aResult), 'data' => array_values($aResult))));
             }
             
         } else if(!isset($_SESSION['refresh_token'])){
