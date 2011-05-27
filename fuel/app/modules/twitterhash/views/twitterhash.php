@@ -1,12 +1,12 @@
 <!-- STYLE -->
 <style>
-    #module_time { display: table-cell; vertical-align: middle; font-size:100%; background: red; height: 200px; width: 410px; line-height: 100%; font-size:170px; text-align: center; }
+    #module_twitterhash { display: table-cell; vertical-align: middle; font-size:100%; background: red; height: 410px; width: 200px; line-height: 100%;}
 </style>
 <!-- /STYLE -->
 
 <!-- CODE -->
-<div id='module_time' class='h_one w_two'>
-    <span id='time'><?php echo $time; ?></span>
+<div id='module_twitterhash' class='h.two w_one'>
+    <span id='time'></span>
 </div>
 <!-- /CODE -->
 
