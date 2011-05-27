@@ -130,3 +130,80 @@ Error - 2011-05-27 20:02:45 --> Error - It appears your _404_ route is incorrect
 Error - 2011-05-27 20:02:52 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/tom/Sites/LaunchBoard/fuel/core/classes/request.php on line 125
 Error - 2011-05-27 20:05:49 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/tom/Sites/LaunchBoard/fuel/core/classes/request.php on line 125
 >>>>>>> ae068c0c74b34ea6ce674b2e674c3ac22a71219f
+Error - 2011-05-27 20:49:57 --> 8 - Undefined variable: aUrls in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 10
+Error - 2011-05-27 20:49:57 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 10
+Error - 2011-05-27 20:50:18 --> 8 - Undefined variable: time in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 12
+Error - 2011-05-27 21:12:25 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 21:19:09 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:20:37 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:20:38 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:20:39 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:20:39 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:20:40 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:20:40 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:21:49 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:21:50 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:21:50 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:21:50 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:21:50 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:21:50 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:21:51 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:26:28 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:26:30 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:26:32 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:26:33 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:26:39 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/data?ids=ga%3A36582140&amp;dimensions=ga%3Adate&amp;metrics=ga%3Avisitors&amp;start-date=2011-05-13&amp;end-date=2011-05-28&amp;max-results=500&amp;oauth_token=1%2FVy-SxdnptWb8iTGbW-QTVKKFAoQwZP9o8YyQLmt-Sfc) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 401 Token invalid - Invalid AuthSub token.
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 21:26:40 --> 8 - Undefined variable: aResults in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 34
+Error - 2011-05-27 21:28:00 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 21:28:02 --> 8 - Undefined variable: aResults in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 34
+Error - 2011-05-27 21:28:03 --> 8 - Undefined variable: aResults in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 34
+Error - 2011-05-27 21:28:04 --> 8 - Undefined variable: aResults in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 34
+Error - 2011-05-27 21:28:06 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 21:28:06 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 21:29:07 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=1%2F-bkxym9tXI_6mrHhaAZfCI-fmHPvEN0ewr0VCWar0x4) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: Operation timed out in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 21:29:07 --> 8 - Undefined variable: http_response_header in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 161
+Error - 2011-05-27 21:29:07 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 21:29:08 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 21:29:13 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 21:29:16 --> 8 - Undefined variable: aResults in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 34
+Error - 2011-05-27 21:29:35 --> 8 - Undefined variable: aResults in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 34
+Error - 2011-05-27 21:29:58 --> 8 - Undefined variable: aResults in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 35
+Error - 2011-05-27 22:07:06 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 22:09:44 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 22:17:16 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/Martijnc/Desktop/launchboard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 22:17:24 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 22:18:10 --> Parsing Error - syntax error, unexpected '{' in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 43
+Error - 2011-05-27 22:18:15 --> Parsing Error - syntax error, unexpected '{' in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 43
+Error - 2011-05-27 22:20:33 --> 8 - Undefined index:  in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:36 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/data?ids=&amp;dimensions=ga%3Adate&amp;metrics=ga%3Avisitors&amp;start-date=2011-05-13&amp;end-date=2011-05-28&amp;max-results=500&amp;oauth_token=1%2F-bkxym9tXI_6mrHhaAZfCI-fmHPvEN0ewr0VCWar0x4) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:36 --> 8 - Undefined variable: _SESSION in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 47
+Error - 2011-05-27 22:20:36 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 56
+Error - 2011-05-27 22:20:36 --> 8 - Undefined index:  in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:38 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/data?ids=&amp;dimensions=ga%3Adate&amp;metrics=ga%3Avisitors&amp;start-date=2011-05-13&amp;end-date=2011-05-28&amp;max-results=500&amp;oauth_token=1%2F-bkxym9tXI_6mrHhaAZfCI-fmHPvEN0ewr0VCWar0x4) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:38 --> 8 - Undefined variable: _SESSION in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 47
+Error - 2011-05-27 22:20:38 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 56
+Error - 2011-05-27 22:20:38 --> 8 - Undefined index:  in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:40 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/data?ids=&amp;dimensions=ga%3Adate&amp;metrics=ga%3Avisitors&amp;start-date=2011-05-13&amp;end-date=2011-05-28&amp;max-results=500&amp;oauth_token=1%2F-bkxym9tXI_6mrHhaAZfCI-fmHPvEN0ewr0VCWar0x4) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:40 --> 8 - Undefined variable: _SESSION in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 47
+Error - 2011-05-27 22:20:40 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 56
+Error - 2011-05-27 22:20:40 --> 8 - Undefined index: marti in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:43 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/data?ids=&amp;dimensions=ga%3Adate&amp;metrics=ga%3Avisitors&amp;start-date=2011-05-13&amp;end-date=2011-05-28&amp;max-results=500&amp;oauth_token=1%2F-bkxym9tXI_6mrHhaAZfCI-fmHPvEN0ewr0VCWar0x4) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:43 --> 8 - Undefined variable: _SESSION in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 47
+Error - 2011-05-27 22:20:43 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 56
+Error - 2011-05-27 22:20:43 --> 8 - Undefined index: martij in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:47 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/data?ids=&amp;dimensions=ga%3Adate&amp;metrics=ga%3Avisitors&amp;start-date=2011-05-13&amp;end-date=2011-05-28&amp;max-results=500&amp;oauth_token=1%2F-bkxym9tXI_6mrHhaAZfCI-fmHPvEN0ewr0VCWar0x4) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 22:20:47 --> 8 - Undefined variable: _SESSION in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 47
+Error - 2011-05-27 22:20:47 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 56

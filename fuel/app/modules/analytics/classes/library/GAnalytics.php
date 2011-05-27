@@ -266,7 +266,7 @@ class Library_GAnalytics
             $nValue = $aDay->getElementsByTagName( 'metric' )->item(0)->getAttribute('value');
             
             /* Assign to dataset */
-            $aResults[][ date( 'M j Y', strtotime( $nDay )) ] = $nValue;
+            $aResults[][ strtotime($nDay) ] = $nValue;
             
         }
 
