@@ -6,7 +6,7 @@
 
 <!-- CODE -->
 <div id='module_time' class='box'>
-    <span id='time'><?=$time?></span>
+    <span id='time'><?php echo $time; ?></span>
 </div>
 <!-- /CODE -->
 

@@ -37,3 +37,8 @@ Error - 2011-05-27 17:50:49 --> 8 - Undefined variable: title in /Users/tom/Site
 Error - 2011-05-27 17:50:49 --> 8 - Undefined variable: title in /Users/tom/Sites/LaunchBoard/fuel/app/modules/time/views/time.php on line 5
 Error - 2011-05-27 17:50:54 --> 8 - Undefined variable: title in /Users/tom/Sites/LaunchBoard/fuel/app/modules/time/views/time.php on line 5
 Error - 2011-05-27 17:50:55 --> 8 - Undefined variable: title in /Users/tom/Sites/LaunchBoard/fuel/app/modules/time/views/time.php on line 5
+Error - 2011-05-27 20:00:07 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/tom/Sites/LaunchBoard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 20:00:09 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/tom/Sites/LaunchBoard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 20:02:45 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/tom/Sites/LaunchBoard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 20:02:52 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/tom/Sites/LaunchBoard/fuel/core/classes/request.php on line 125
+Error - 2011-05-27 20:05:49 --> Error - It appears your _404_ route is incorrect.  Multiple Recursion has happened. in /Users/tom/Sites/LaunchBoard/fuel/core/classes/request.php on line 125

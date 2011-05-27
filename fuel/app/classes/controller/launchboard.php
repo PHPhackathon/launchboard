@@ -10,5 +10,9 @@
  */
 class Controller_LaunchBoard extends Controller {
 
+    public function action_index()
+    {
+        echo 'ok';
+    }
 
 }
