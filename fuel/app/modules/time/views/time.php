@@ -5,7 +5,7 @@
 <!-- /STYLE -->
 
 <!-- CODE -->
-<div id='module_time' class='box'>
+<div id='module_time' class='h_one w_two'>
     <span id='time'><?php echo $time; ?></span>
 </div>
 <!-- /CODE -->
