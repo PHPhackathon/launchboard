@@ -1,22 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <title>LaunchBoard</title>
-    <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { background-color: #EEE; font-family: sans-serif; font-size: 16px; line-height: 20px; margin: 40px; }
-        #wrapper { padding: 30px; background: #fff; color: #333; margin: 0 auto; width: 600px; }
-        h1 { color: #000; font-size: 55px; padding: 0 0 25px; line-height: 1em; }
-        ul { margin: 15px 30px; }
-    </style>
+  <meta charset="utf-8">
+
+  <title>LaunchBoard v0.1</title>
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="/assets/css/style.css?v=2">
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="/assets/js/libs/modernizr-1.7.min.js"></script>
+
 </head>
+
 <body>
-    <div id="wrapper">
-        <h1>LaunchBoard v1.0</h1>
-        <ul>
-            <li><a href="/time/">Time</a></li>
-        </ul>
-    </div>
+
+<div class="launchboard">
+
+    <div id="sortable"></div>
+
+</div>
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='/assets/js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+
+<!-- scripts concatenated and minified via ant build script-->
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/script.js"></script>
+<!-- end scripts-->
+
 </body>
 </html>
