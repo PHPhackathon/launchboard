@@ -14,8 +14,6 @@
 
 namespace Fuel\Core;
 
-
-
 abstract class Cache_Storage_Driver {
 
 	/**
@@ -310,7 +308,8 @@ abstract class Cache_Storage_Driver {
 	{
 		if ( ! $this->_get())
 		{
-			throw new \Cache_Exception('not found');
+                        return false;
+			//throw new \Cache_Exception('not found');
 		}
 
 		if ($use_expiration)
@@ -318,14 +317,16 @@ abstract class Cache_Storage_Driver {
 			if ( ! is_null($this->expiration) and $this->expiration < 0)
 			{
 				$this->delete();
-				throw new \Cache_Exception('expired');
+                                return false;
+				//throw new \Cache_Exception('expired');
 			}
 
 			// Check dependencies and handle as expired on failure
 			if ( ! $this->check_dependencies($this->dependencies))
 			{
 				$this->delete();
-				throw new \Cache_Exception('expired');
+                                return false;
+				//throw new \Cache_Exception('expired');
 			}
 		}
 
