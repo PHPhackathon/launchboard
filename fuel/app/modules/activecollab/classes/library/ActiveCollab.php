@@ -2,7 +2,7 @@
 
 namespace Activecollab;
 
-class Library_Activecollab
+class Library_ActiveCollab
 {
 	public static $apiUrl;
 	public static $apiKey;
