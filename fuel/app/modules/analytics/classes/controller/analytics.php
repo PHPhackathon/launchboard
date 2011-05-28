@@ -18,7 +18,7 @@ class Controller_Analytics extends \Controller_LaunchBoard {
 
        session_start();
 
-       $pAnalytics = new Library_GAnalytics();
+       $pAnalytics = new Library_Ganalytics();
 
        if(isset($_GET[ 'code' ])) {
         
