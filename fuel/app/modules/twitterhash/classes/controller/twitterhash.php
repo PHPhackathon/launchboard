@@ -15,7 +15,7 @@ class Controller_Twitterhash extends \Controller_LaunchBoard {
      * @access  private
      * @var     string 
      */
-    private $hastag = 'phphackathon';
+    private $hashtag = 'phphackathon';
     
     /**
      * The default view action for our module.
@@ -26,7 +26,7 @@ class Controller_Twitterhash extends \Controller_LaunchBoard {
     public function action_index() {
               
         if(!$twitterhash = \Cache::get('twitterhash')){
-            $twitterhash = $this->_fetch_twitterhash($this->hastag);
+            $twitterhash = $this->_fetch_twitterhash($this->hashtag);
             \Cache::set('twitterhash', $twitterhash, 60);
         }
         
