@@ -1,12 +1,12 @@
 <!-- STYLE -->
 <style>
-    #module_flickr { position:relative; display: block;  font-size:100%; background: red; height: 200px; width: 200px; overflow: hidden; }
+    #module_flickr { position:relative; display: block; font-size:100%; overflow: hidden; }
     #module_flickr img { position: absolute; top:0; left:0; display: none;  }
 </style>
 <!-- /STYLE -->
 
 <!-- CODE -->
-<div id='module_flickr' class='h.one w_one'>
+<div id='module_flickr' class='h_one w_one'>
     <?php
     $counter = 1;
     foreach($photos as $photo){
