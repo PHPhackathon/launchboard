@@ -15,6 +15,7 @@ $(function() {
 	load_widget('time', 60 * 1000);
 	load_widget('facebooklikes', 60 * 1000);
 	load_widget('twitterhash', 60 * 1000);
+	load_widget('rainer', 60 * 1000);
 	load_widget('flickr', 60 * 1000);
 	load_widget('daydone', 60 * 1000);
 	load_widget('weather', 60 * 1000);
