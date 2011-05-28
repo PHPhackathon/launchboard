@@ -22,6 +22,14 @@ function updateAnalytics() {
     });
 }
 
+<<<<<<< HEAD
+=======
+function reload() {
+    window.location.reload();
+}
+
+//setTimeout(reload, 120000);
+>>>>>>> 8cd4f7e15199a22ff4a7d0cee91069000f2fc52f
 
 $(document).ready(function() {
     analyticsChart = new Highcharts.Chart({
@@ -68,7 +76,7 @@ $(document).ready(function() {
 <div id="module_analytics" class="box h_two w_four">
     <select id="select_analytics">
     <?php
-    var_dump($aUrls);
+    //var_dump($aUrls);
         foreach($aUrls as $sUrl => $sTableId) {
     ?>
             <option value="<?php echo $sUrl; ?>"><?php echo $sUrl; ?></option>
