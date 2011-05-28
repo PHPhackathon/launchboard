@@ -28,7 +28,9 @@ $(document).ready(function() {
         chart: {
             renderTo: 'analytics_chart',
             defaultSeriesType: 'line',
-            backgroundColor: 'transparant'
+            backgroundColor: 'transparant',
+            height: 175,
+            width: 405
         },
         colors: [
             '#DB843D'
