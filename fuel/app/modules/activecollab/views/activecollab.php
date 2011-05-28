@@ -1,6 +1,6 @@
 <!-- STYLE -->
 <style>
-    #module_activecollab { height: 380px; width: 790px;  background:#000; padding:20px 20px 10px 20px; position:relative;}
+    #module_activecollab { padding:20px 20px 10px 20px; position:relative;}
     #columns {position:relative; width:100%; height:340px; z-index:10;}
     #legend {position:relative; width:100%; height:50px;}
     .column {min-width:40px; bottom:0; position:absolute;}
@@ -10,7 +10,7 @@
 <!-- /STYLE -->
 
 <!-- CODE -->
-<div id='module_activecollab' class='box'>
+<div id='module_activecollab' class='w_four h_two'>
 	<div class="line" style="top:5px;">100</div>
 	<div class="line" style="bottom:50px;">0</div>
 	<div id="columns" >
