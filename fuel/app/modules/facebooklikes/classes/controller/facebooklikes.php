@@ -22,19 +22,29 @@ class Controller_Facebooklikes extends \Controller_LaunchBoard {
      * @return  void
      */
     public function action_index() {
-
-        /* Get data from Facebook Graph API */
-        $sContent = file_get_contents('https://graph.facebook.com/' . $this->_sPage);
         
-        /* If the request was succefull, parse data */
-        if($sContent !== false) {
-            $oFb = json_decode($sContent);
-            
-            $data['sName'] = $oFb->name;
-            $data['nLikes'] = $oFb->likes;
+        /* Try reading from cache */
+        if(($nLikes = \Cache::get('fblikes_' . $this->_sPage))) {
+            $data['sName'] = \Cache::get('fblikes_name_' . $this->_sPage);
+            $data['nLikes'] = $nLikes;
         } else {
-            $data['sName'] = 'noone';
-            $data['nLikes'] = 0;
+            /* Or get data from Facebook Graph API */
+            $sContent = file_get_contents('https://graph.facebook.com/' . $this->_sPage);
+        
+            /* If the request was succefull, parse data */
+            if($sContent !== false) {
+                $oFb = json_decode($sContent);
+            
+                $data['sName'] = $oFb->name;
+                $data['nLikes'] = $oFb->likes;
+            
+                \Cache::set('fblikes_name_' . $this->_sPage, $oFb->name, 1800);
+                \Cache::set('fblikes_' . $this->_sPage, $oFb->likes, 1800);
+            
+            } else {
+                $data['sName'] = 'noone';
+                $data['nLikes'] = 0;
+            }
         }
         
         /* Send data to view */
