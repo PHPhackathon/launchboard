@@ -24,16 +24,13 @@ class Controller_Twitterhash extends \Controller_LaunchBoard {
      * @return  void
      */
     public function action_index() {
-       
-        echo '<pre>';
-       
-        if(!$twitterHash = \Cache::get('twitterhash')){
-            $twitterHash = $this->_fetch_twitterhash($this->hastag);
-            \Cache::set('twitterhash', $twitterHash, 60);
+              
+        if(!$twitterhash = \Cache::get('twitterhash')){
+            $twitterhash = $this->_fetch_twitterhash($this->hastag);
+            \Cache::set('twitterhash', $twitterhash, 60);
         }
-
         
-        $data['twitterHash'] = $twitterHash;
+        $data['twitterhash'] = $twitterhash;
         $this->response->body = \View::factory('twitterhash', $data);
     }
     
@@ -48,7 +45,7 @@ class Controller_Twitterhash extends \Controller_LaunchBoard {
     private function _fetch_twitterhash($hashtag = ''){
         
         try{
-            $url ='http://search.twitter.com/search.json?tag='.$hashtag.'&rpp=50';
+            $url ='http://search.twitter.com/search.json?tag='.$hashtag.'&rpp=5';
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_USERAGENT, "LaunchBoard Mozilla Parl");
