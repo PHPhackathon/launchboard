@@ -18,11 +18,9 @@ class Controller_Analytics extends \Controller_LaunchBoard {
 
        /* Start session */
        session_start();
-<<<<<<< HEAD
-       //var_dump($_SESSION);
-=======
 
->>>>>>> 53641c5b58c3809974a71931fc61140ad64922f9
+       //var_dump($_SESSION);
+
        /* Load analytics library */
        $pAnalytics = new Library_Ganalytics();
 
