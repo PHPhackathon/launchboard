@@ -23,7 +23,9 @@ $(document).ready(function() {
     var curPhoto = 1;
     var totalPhotos = $('img').size();
     
-    
+    sliderInterval = setInterval(function(){
+        gotoPhoto((curPhoto == totalPhotos ? 1 : curPhoto+1));
+    }, 7000);
     
     console.log($('img').size());
 
