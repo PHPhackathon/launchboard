@@ -28,8 +28,8 @@ $(document).ready(function() {
         chart: {
             renderTo: 'analytics_chart',
             defaultSeriesType: 'line',
-            height: 350,
-            width: 800,
+            height: 150,
+            width: 350,
             backgroundColor: 'transparant'
         },
         legend: {
@@ -65,7 +65,7 @@ $(document).ready(function() {
 <!-- /JS -->
 
 <!-- CODE -->
-<div id="module_analytics" class="box h_two w_four">
+<div id="module_analytics" class="box h_one w_two">
     <select id="select_analytics">
     <?php
     //var_dump($aUrls);
