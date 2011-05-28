@@ -1,7 +1,7 @@
 <!-- STYLE -->
 <style>
     #module_birthdays { font-size:100%; line-height: 100%; text-align: center; font-size: 50px; }
-    #module_birthdays .heading { margin-bottom: 25px; }
+    #module_birthdays .heading { margin-bottom: 25px; text-align: left; }
 </style>
 <!-- /STYLE -->
 

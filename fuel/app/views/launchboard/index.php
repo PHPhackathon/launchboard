@@ -21,6 +21,10 @@
 
 <body>
 
+<header>
+    <img src="/assets/img/launchboard.png" alt="" />
+</header>
+
 <div class="launchboard">
 
     <div id="sortable"></div>
