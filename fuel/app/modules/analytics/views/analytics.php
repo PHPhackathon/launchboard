@@ -78,7 +78,7 @@ $(document).ready(function() {
         } // end foreach
     ?>
     </select>
-
+    <a href="/?reset=true">Reset</a>
     <div id="analytics_chart">
         
     </div>
