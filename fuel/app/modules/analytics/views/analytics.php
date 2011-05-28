@@ -33,7 +33,8 @@ $(document).ready(function() {
         chart: {
             renderTo: 'analytics_chart',
             defaultSeriesType: 'line'
-            height: 350
+            height: 350,
+            width: 800
         },
         legend: {
            enabled: false
@@ -45,7 +46,6 @@ $(document).ready(function() {
             categories: [],
                 labels: {
                 rotation: 280,
-                width: 800,
                 align: 'right'
             }
         },
