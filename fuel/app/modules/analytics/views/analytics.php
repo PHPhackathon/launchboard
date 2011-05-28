@@ -28,9 +28,10 @@ $(document).ready(function() {
         chart: {
             renderTo: 'analytics_chart',
             defaultSeriesType: 'line',
-            height: 150,
-            width: 350,
             backgroundColor: 'transparant'
+        },
+        colors: {
+            '#DB843D'
         },
         legend: {
            enabled: false
