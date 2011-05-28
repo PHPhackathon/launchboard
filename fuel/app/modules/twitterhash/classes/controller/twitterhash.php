@@ -31,7 +31,7 @@ class Controller_Twitterhash extends \Controller_LaunchBoard {
         }
         
         $data['twitterhash'] = $twitterhash;
-        $data['hashtag'] $this->hashtag;
+        $data['hashtag'] = $this->hashtag;
         $this->response->body = \View::factory('twitterhash', $data);
     }
     
