@@ -51,7 +51,8 @@ class Controller_Flickr extends \Controller_LaunchBoard {
             \Cache::set('flickr', $photos, 60);
         }
         
-        $data['photos'] = $photos;
+        $data['photo'] = $photos[array_rand($photos)];
+        
         $this->response->body = \View::factory('flickr', $data);
     }
     
