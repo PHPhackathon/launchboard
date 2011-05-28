@@ -9,20 +9,14 @@ $(function() {
 	// add a class for a better ui
 	$('#sortable .box').addClass('ui-widget-content');
 	
-	$('#widgets').change(function() {
-		// add the widget
-		load_widget($(this).val());
-
-		// reset the select
-		$(this).val('');
-	});
-	
 	// autoload widgets
-	//load_widget('activecollab', 60 * 60 * 1000);
-	//load_widget('analytics', 60 * 60 * 1000);
+	load_widget('activecollab', 60 * 60 * 1000);
+	load_widget('analytics', 60 * 60 * 1000);
 	load_widget('time', 60 * 1000);
 	load_widget('flickr', 60 * 1000);
+	load_widget('weather', 60 * 1000);
 	load_widget('twitterhash', 60 * 1000);
+	load_widget('facebooklikes', 60 * 1000);
 });
 
 var load_widget = function(selectedWidget, refreshRate) {

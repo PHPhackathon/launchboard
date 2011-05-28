@@ -68,7 +68,7 @@ class Controller_Weather extends \Controller_LaunchBoard {
             );
         } catch (Exeption $e){
             return null;
-        }        
+        }
     }
 
 }
