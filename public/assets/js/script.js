@@ -11,7 +11,7 @@ $(function() {
 	
 	// autoload widgets
 	load_widget('activecollab', 60 * 60 * 1000);
-	//load_widget('analytics', 60 * 60 * 1000);
+	load_widget('analytics', 60 * 60 * 1000);
 	load_widget('time', 60 * 1000);
 	load_widget('calendar', 60 * 1000);
 	load_widget('birthdays', 60 * 1000);

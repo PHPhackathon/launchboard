@@ -22,21 +22,19 @@ function updateAnalytics() {
     });
 }
 
-function reload() {
-    window.location.reload();
-}
-
-//setTimeout(reload, 120000);
 
 $(document).ready(function() {
     analyticsChart = new Highcharts.Chart({
         chart: {
             renderTo: 'analytics_chart',
             defaultSeriesType: 'line',
-            height: 350,
-            width: 800,
-            backgroundColor: 'transparant'
+            backgroundColor: 'transparant',
+            height: 175,
+            width: 405
         },
+        colors: [
+            '#DB843D'
+        ],
         legend: {
            enabled: false
         },
@@ -45,15 +43,21 @@ $(document).ready(function() {
         },
         xAxis: {
             categories: [],
-                labels: {
-                rotation: 280,
-                align: 'right'
+            labels: {
+                style: {
+                    display: 'none'
+                }
             }
         },
         yAxis: {
              allowDecimals: false,
              title: {
                 text: ''
+            },
+            labels: {
+                style: {
+                    display: 'none'
+                }
             }
         },
         series: [{
@@ -70,7 +74,7 @@ $(document).ready(function() {
 <!-- /JS -->
 
 <!-- CODE -->
-<div id="module_analytics" class="box h_two w_four">
+<div id="module_analytics" class="box h_one w_two">
     <select id="select_analytics">
     <?php
     //var_dump($aUrls);
