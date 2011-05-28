@@ -69,7 +69,7 @@ $(document).ready(function() {
 <!-- CODE -->
 <div id="module_analytics" class="box h_one w_four">
     <select id="select_analytics">
-    <?php var_dump($aUrls);
+    <?php
         foreach($aUrls as $sUrl => $sTableId) {
     ?>
             <option value="<?=$sUrl?>"><?=$sUrl?></option>

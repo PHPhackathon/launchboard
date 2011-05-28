@@ -15,7 +15,7 @@ class Controller_Analytics extends \Controller_LaunchBoard {
      * @return  void
      */
     public function action_index() {
-
+die();
        session_start();
 
        $pAnalytics = new Library_Ganalytics();
