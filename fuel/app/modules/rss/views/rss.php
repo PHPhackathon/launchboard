@@ -1,7 +1,7 @@
 <!-- STYLE -->
 <style>
     #module_rss { position:relative; display: block; font-size:100%; overflow: hidden; }
-    #module_rss .rssBox {padding: 5px; position: absolute; top:40px; left:0; display: block; height: 100px;}
+    #module_rss .rssBox {padding: 10px; position: absolute; top:40px; left:0; display: block; height: 100px;}
     #module_rss .show {display: block;}
     #module_rss .title { font-size: 24px; line-height: 28px; font-weight: bold;  }
 </style>
