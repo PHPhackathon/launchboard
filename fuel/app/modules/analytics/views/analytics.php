@@ -32,8 +32,10 @@ $(document).ready(function() {
             height: 175,
             width: 405
         },
-        labels {
-            display: 'none';
+        labels: {
+            style: {
+                display: 'none'
+            }
         },
         colors: [
             '#DB843D'
