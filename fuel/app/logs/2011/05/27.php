@@ -254,3 +254,97 @@ Error - 2011-05-27 23:02:19 --> 2 - file_get_contents(https://www.google.com/ana
  in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
 Error - 2011-05-27 23:02:19 --> 2 - array_keys() expects parameter 1 to be array, boolean given in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 41
 Error - 2011-05-27 23:02:19 --> 2 - array_values() expects parameter 1 to be array, boolean given in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 41
+Error - 2011-05-27 23:21:42 --> 8 - Undefined variable: _SESSION in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 54
+Error - 2011-05-27 23:21:42 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:21:42 --> 8 - Undefined index: null in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 23:21:44 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/data?ids=&amp;dimensions=ga%3Adate&amp;metrics=ga%3Avisitors&amp;start-date=2011-05-13&amp;end-date=2011-05-28&amp;max-results=500&amp;oauth_token=1%2FAPh_2fAlR_zq6jMXz1ygq6wVaYlyIGsstnORIEUXSIo) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 23:21:44 --> 2 - array_keys() expects parameter 1 to be array, boolean given in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 47
+Error - 2011-05-27 23:21:44 --> 2 - array_values() expects parameter 1 to be array, boolean given in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 47
+Error - 2011-05-27 23:21:44 --> 8 - Undefined variable: _SESSION in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 54
+Error - 2011-05-27 23:21:44 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:21:44 --> 8 - Undefined index: null in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 23:21:46 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/data?ids=&amp;dimensions=ga%3Adate&amp;metrics=ga%3Avisitors&amp;start-date=2011-05-13&amp;end-date=2011-05-28&amp;max-results=500&amp;oauth_token=1%2FAPh_2fAlR_zq6jMXz1ygq6wVaYlyIGsstnORIEUXSIo) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 223
+Error - 2011-05-27 23:21:46 --> 2 - array_keys() expects parameter 1 to be array, boolean given in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 47
+Error - 2011-05-27 23:21:46 --> 2 - array_values() expects parameter 1 to be array, boolean given in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 47
+Error - 2011-05-27 23:29:30 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: Operation timed out in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 23:29:30 --> 8 - Undefined index: access_token in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:29:31 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 401 Authorization required
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:29:31 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:29:31 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:29:32 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 23:29:32 --> 8 - Undefined index: access_token in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:29:34 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 401 Authorization required
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:29:34 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:29:34 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:29:34 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:29:34 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:29:35 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 23:29:35 --> 8 - Undefined index: access_token in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:29:37 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 401 Authorization required
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:29:37 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:29:37 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:29:37 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:29:37 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:29:52 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 500 Internal Server Error
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 23:29:52 --> 8 - Undefined index: access_token in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:29:55 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 401 Authorization required
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:29:55 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:29:55 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:29:55 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:29:55 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:31:01 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80
+Error - 2011-05-27 23:31:11 --> 8 - Undefined index: access_token in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:31:12 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 401 Authorization required
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:31:12 --> 8 - Undefined index: access_token in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:32:12 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: Operation timed out in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:32:12 --> 8 - Undefined variable: http_response_header in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 161
+Error - 2011-05-27 23:32:12 --> 8 - Undefined index: access_token in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:32:15 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 401 Authorization required
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:32:15 --> 8 - Undefined index: access_token in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:32:16 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 401 Authorization required
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:32:16 --> 8 - Undefined index: access_token in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:32:18 --> 2 - file_get_contents(https://www.google.com/analytics/feeds/accounts/default?oauth_token=) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 401 Authorization required
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 158
+Error - 2011-05-27 23:54:52 --> 8 - Undefined variable: data in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 51
+Error - 2011-05-27 23:54:52 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:54:52 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:54:52 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:54:52 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:55:42 --> 8 - Undefined variable: data in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 53
+Error - 2011-05-27 23:55:42 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:55:42 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:55:42 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:55:42 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:55:44 --> 8 - Undefined variable: data in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 53
+Error - 2011-05-27 23:55:44 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:55:44 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:55:45 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:55:45 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:55:51 --> 8 - Undefined variable: data in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 53
+Error - 2011-05-27 23:55:51 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:55:51 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:55:51 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:55:51 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:55:57 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:55:57 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:55:57 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:55:57 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:56:00 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:56:00 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:56:01 --> 8 - Undefined index: urls in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/controller/analytics.php on line 56
+Error - 2011-05-27 23:56:01 --> 2 - Invalid argument supplied for foreach() in /Users/Martijnc/Desktop/launchboard/fuel/app/modules/analytics/views/analytics.php on line 67
+Error - 2011-05-27 23:58:17 --> 2 - file_get_contents(https://accounts.google.com/o/oauth2/token) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /users/martijnc/desktop/launchboard/fuel/app/modules/analytics/classes/library/ganalytics.php on line 80

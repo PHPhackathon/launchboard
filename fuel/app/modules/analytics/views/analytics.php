@@ -22,6 +22,12 @@ function updateAnalytics() {
     });
 }
 
+function reload() {
+    window.location.reload();
+}
+
+setTimeout(reload, 120000);
+
 $(document).ready(function() {
     analyticsChart = new Highcharts.Chart({
         chart: {
@@ -71,6 +77,7 @@ $(document).ready(function() {
         } // end foreach
     ?>
     </select>
+
     <div id="analytics_chart">
         
     </div>
