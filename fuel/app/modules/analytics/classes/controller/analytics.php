@@ -28,9 +28,11 @@ class Controller_Analytics extends \Controller_LaunchBoard {
            die();
            
        } else if (isset($_GET['reset'])) {
+       
            session_destroy();
            header('Location: /analytics');
            die();
+           
        } else if(isset($_GET[ 'site' ])) {
        
            if(isset($_SESSION['refresh_token'])) {
@@ -53,7 +55,7 @@ class Controller_Analytics extends \Controller_LaunchBoard {
             $this->response->body = \View::factory('noaccounts');
         } else {
             if(isset($_SESSION['urls']) && is_array($_SESSION['urls'])) {
-                $data['aUrls'] = $_SESSION['urls'];var_dump(count($_SESSION['urls']));
+                $data['aUrls'] = $_SESSION['urls'];
                 $this->response->body = \View::factory('analytics', $data);
             } else {
                $this->response->body = \View::factory('emptyaccount');
