@@ -22,14 +22,6 @@ function updateAnalytics() {
     });
 }
 
-<<<<<<< HEAD
-=======
-function reload() {
-    window.location.reload();
-}
-
-//setTimeout(reload, 120000);
->>>>>>> 8cd4f7e15199a22ff4a7d0cee91069000f2fc52f
 
 $(document).ready(function() {
     analyticsChart = new Highcharts.Chart({
