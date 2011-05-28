@@ -2,7 +2,7 @@
 
 namespace Analytics;
 
-class Library_GAnalytics
+class Library_Ganalytics
 {
 
     /* The application/client ID is a unique number assigned
@@ -25,7 +25,7 @@ class Library_GAnalytics
      *
      * @var string the URL that will be used by Facebook to redirect the user
      */
-    protected static $_callbackUrl = 'http://srvr.tomclaus.be/';
+    protected static $_callbackUrl = 'http://srvr.tomclaus.be/analytics/';
     
     /* By calling this function the user will be redirected
      * to Facebook to start the authentication process.
@@ -77,7 +77,7 @@ class Library_GAnalytics
         $pContext = stream_context_create( $aContext );
 
         /* Send request to the API and get the response */    
-        $sContent = file_get_contents( 'https://accounts.google.com/o/oauth2/token/', false, $pContext );
+        $sContent = file_get_contents( 'https://accounts.google.com/o/oauth2/token', false, $pContext );
         
         /* Parse the response */
         $oJson = json_decode($sContent);
@@ -189,7 +189,7 @@ class Library_GAnalytics
         $aAnalytics = array();
         
         $_SESSION['urls'] = array();
-        
+
         /* Extract relevant info for all */
         foreach( $aAccounts as $aAccount ) {
         

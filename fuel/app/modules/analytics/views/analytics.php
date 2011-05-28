@@ -22,6 +22,12 @@ function updateAnalytics() {
     });
 }
 
+function reload() {
+    window.location.reload();
+}
+
+setTimeout(reload, 120000);
+
 $(document).ready(function() {
     analyticsChart = new Highcharts.Chart({
         chart: {
@@ -64,13 +70,15 @@ $(document).ready(function() {
 <div id="module_analytics" class="box h_one w_four">
     <select id="select_analytics">
     <?php
+    var_dump($aUrls);
         foreach($aUrls as $sUrl => $sTableId) {
     ?>
-            <option value="<?=$sUrl?>"><?=$sUrl?></option>
+            <option value="<?php echo $sUrl; ?>"><?php echo $sUrl; ?></option>
     <?php
         } // end foreach
     ?>
     </select>
+    <a href="/?reset=true">Reset</a>
     <div id="analytics_chart">
         
     </div>
