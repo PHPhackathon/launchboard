@@ -2,7 +2,7 @@
 function reload() {
     window.location.reload();
 }
-setTimeout(reload, 10000);
+setTimeout(reload, 2000);
 </script>
 
 <div id="module_analytics" class="box h_one w_four">
