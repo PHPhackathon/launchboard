@@ -6,17 +6,17 @@
 
 <!-- CODE -->
 <div id='module_weather' class='h_one w_one'>
-    <span class="heading"><? echo $location ?></span>
+    <span class="heading"><?php echo $location ?></span>
      
     <table>
         <tr>
             <td valign="middle">
-                <img src='<?=$weather['icon']?>' alt='' />
+                <img src='<?php echo $weather['icon']?>' alt='' />
             </td>
             <td valign="top">
-                <strong><?=$weather['temp']?>&deg;C - <?=$weather['condition']?></strong><br />
-                <?=$weather['humidity']?><br />
-                <?=$weather['wind']?>
+                <strong><?php echo $weather['temp']?>&deg;C - <?php echo $weather['condition']?></strong><br />
+                <?php echo $weather['humidity']?><br />
+                <?php echo $weather['wind']?>
             </td>
         </tr>
     </table>
