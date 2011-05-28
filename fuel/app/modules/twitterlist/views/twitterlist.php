@@ -13,10 +13,13 @@
 <div id='module_twitterlist' class='h_two w_two'>
     <span class="heading">list <?php echo $list ?></span>
     <?php
+    $i=0;
     foreach($twitterlist as $tweet){
+        if($i > 4) continue;
+        $i++;
         echo "<div class='tweet clearfix'>";
-            echo "<img src='".$tweet->profile_image_url."' alt='".$tweet->from_user."' />";
-            echo "<span class='title'>@".$tweet->from_user.":</span>";
+            echo "<img src='".$tweet->user->profile_image_url."' alt='".$tweet->user->screen_name."' />";
+            echo "<span class='title'>@".$tweet->user->screen_name.":</span>";
             echo " <span class='txt'>".$tweet->text."</span>";
         echo "</div>";
     }

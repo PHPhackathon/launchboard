@@ -15,7 +15,8 @@ class Controller_Twitterlist extends \Controller_LaunchBoard {
      * @access  private
      * @var     string 
      */
-    private $list = 'http://twitter.com/#!/dieterverjans/inventis';
+    private $list = 'http://api.twitter.com/1/dieterverjans/lists/inventis/statuses.json';
+    private $listTitle = 'dieterverjans/inventis';
     
     /**
      * The default view action for our module.
@@ -31,7 +32,7 @@ class Controller_Twitterlist extends \Controller_LaunchBoard {
         }
         
         $data['twitterlist'] = $twitterlist;
-        $data['list'] = $this->list;
+        $data['list'] = $this->listTitle;
         $this->response->body = \View::factory('twitterlist', $data);
     }
     
@@ -55,7 +56,7 @@ class Controller_Twitterlist extends \Controller_LaunchBoard {
             curl_setopt($ch, CURLOPT_TIMEOUT, 10);
             $output = json_decode(curl_exec($ch));
             curl_close($ch);
-            return $output->results;
+            return $output;
         }  catch (Exeption $e){
             return null;
         }        
