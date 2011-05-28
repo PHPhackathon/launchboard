@@ -33,7 +33,9 @@ $(document).ready(function() {
         chart: {
             renderTo: 'analytics_chart',
             defaultSeriesType: 'line',
-            height: 350
+            height: 350,
+            width: 800,
+            backgroundColor: 'transparant'
         },
         legend: {
            enabled: false
