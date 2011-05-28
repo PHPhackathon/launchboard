@@ -17,7 +17,7 @@ class Controller_Activecollab extends \Controller_LaunchBoard {
 	public function action_index() {
 	
 		//load library
-		$Activecollab = new Library_Activecollab();
+		$Activecollab = new Library_ActiveCollab();
 		
 		$url = 'http://ac.inventis.be/public/api.php';
 		$key = '99-YI10HZbnJttkoQqpvyFtyXMtHtZeAdanL1miOowm';
