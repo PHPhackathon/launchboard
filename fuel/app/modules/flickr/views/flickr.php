@@ -1,14 +1,14 @@
 <!-- STYLE -->
 <style>
     #module_flickr { position:relative; display: block;  font-size:100%; background: red; height: 200px; width: 200px; overflow: hidden; }
-    #module_flickr img { position: absolute; top:0; left:0;  }
+    #module_flickr img { position: absolute; top:0; left:0; display: none;  }
 </style>
 <!-- /STYLE -->
 
 <!-- CODE -->
 <div id='module_flickr' class='h.one w_one'>
     <?php
-    $counter = 0;
+    $counter = 1;
     foreach($photos as $photo){
         echo "<img src='".$photo['url']."' alt='' id='photo".$counter++."' />\n";
     }
@@ -22,14 +22,16 @@
 $(document).ready(function() {
     var curPhoto = 1;
     var totalPhotos = $('img').size();
-    
+    gotoPhoto(0, 1);
     sliderInterval = setInterval(function(){
-        gotoPhoto((curPhoto == totalPhotos ? 1 : curPhoto+1));
-    }, 7000);
-    
-    console.log($('img').size());
-
-    
+        var nextPhoto = curPhoto == totalPhotos ? 1 : curPhoto+1;
+        gotoPhoto(curPhoto, nextPhoto);
+        curPhoto = nextPhoto;
+    }, 2000);
 });
+function gotoPhoto(cur, next){
+    $('#photo'+cur).fadeOut();
+    $('#photo'+next).fadeIn();
+}
 </script>
 <!-- /JS -->

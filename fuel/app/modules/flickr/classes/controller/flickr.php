@@ -66,7 +66,7 @@ class Controller_Flickr extends \Controller_LaunchBoard {
     private function _fetch_photos($search = ''){
         
         try{
-            $url ='http://flickr.com/services/rest/?method=flickr.photos.search&api_key=' . $this->apikey . '&text='.$search.'&per_page=50&format=php_serial';
+            $url ='http://flickr.com/services/rest/?method=flickr.photos.search&api_key=' . $this->apikey . '&text='.$search.'&per_page=50&format=php_serial&per_page=5';
             $output = file_get_contents($url);
             return unserialize($output);
         }  catch (Exeption $e){
