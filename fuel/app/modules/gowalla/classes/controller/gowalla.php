@@ -35,7 +35,7 @@ class Controller_Gowalla extends \Controller_LaunchBoard {
                 );
             }      
             $data['title'] = (string)$checkins->title;
-            \Cache::set('gowalla', $data, 120);
+            \Cache::set('gowalla', $data, 5 * 60 * 60);
         }
         
         

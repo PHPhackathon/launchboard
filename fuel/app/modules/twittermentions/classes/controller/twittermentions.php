@@ -27,7 +27,7 @@ class Controller_Twittermentions extends \Controller_LaunchBoard {
               
         if(!$twittermentions = \Cache::get('twittermentions')){
             $twittermentions = $this->_fetch_twittermentions($this->mentions);
-            \Cache::set('twittermentions', $twittermentions, 60);
+            \Cache::set('twittermentions', $twittermentions, 5 * 60 * 60);
         }
         
         $data['twittermentions'] = $twittermentions;

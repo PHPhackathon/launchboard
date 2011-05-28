@@ -38,7 +38,7 @@ class Controller_Calendar extends \Controller_LaunchBoard {
                 );
             }
             $data['title'] = (string)$events->title;
-            \Cache::set('calendar', $data, 60);
+            \Cache::set('calendar', $data, 5 * 60 * 60);
         }
         
         $this->response->body = \View::factory('calendar', $data);

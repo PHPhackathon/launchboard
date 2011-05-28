@@ -28,7 +28,7 @@ class Controller_Twitterlist extends \Controller_LaunchBoard {
               
         if(!$twitterlist = \Cache::get('twitterlist')){
             $twitterlist = $this->_fetch_twitterlist($this->list);
-            \Cache::set('twitterlist', $twitterlist, 60);
+            \Cache::set('twitterlist', $twitterlist, 5 * 60 * 60);
         }
         
         $data['twitterlist'] = $twitterlist;

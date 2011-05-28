@@ -38,8 +38,8 @@ class Controller_Facebooklikes extends \Controller_LaunchBoard {
                 $data['sName'] = $oFb->name;
                 $data['nLikes'] = $oFb->likes;
             
-                \Cache::set('fblikes_name_' . $this->_sPage, $oFb->name, 1800);
-                \Cache::set('fblikes_' . $this->_sPage, $oFb->likes, 1800);
+                \Cache::set('fblikes_name_' . $this->_sPage, $oFb->name, 3600);
+                \Cache::set('fblikes_' . $this->_sPage, $oFb->likes, 3600);
             
             } else {
                 $data['sName'] = 'noone';

@@ -27,7 +27,7 @@ class Controller_Weather extends \Controller_LaunchBoard {
               
         if(!$weather = \Cache::get('weather')){
             $weather = $this->_fetchWeather($this->location);
-            \Cache::set('weather', $weather, 1800);
+            \Cache::set('weather', $weather, 5 * 60 * 60);
         }
         
         $data['weather'] = $weather;

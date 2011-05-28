@@ -48,7 +48,7 @@ class Controller_Flickr extends \Controller_LaunchBoard {
             foreach($photos as &$photo){
                 $photo['url'] = 'http://farm'.$photo["farm"].'.static.flickr.com/'.$photo["server"].'/'.$photo["id"].'_'.$photo["secret"].'.jpg';
             }       
-            \Cache::set('flickr', $photos, 60);
+            \Cache::set('flickr', $photos, 5 * 60 * 60);
         }
         
         $data['photo'] = $photos[array_rand($photos)];

@@ -28,7 +28,7 @@ class Controller_Rss extends \Controller_LaunchBoard {
               
         if(!$rss = \Cache::get('rss')){
             $rss = $this->_fetchRss($this->url);
-            \Cache::set('rss', $rss, 1800);
+            \Cache::set('rss', $rss, 3600);
         }
         $total = count($rss)-1;
         $data['rss'] = $rss[rand(0, $total)];

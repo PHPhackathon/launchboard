@@ -52,7 +52,7 @@ class Controller_Foursquare extends \Controller_LaunchBoard {
             $checkins_stop = strpos($foursquare, '</em>');
             $data['checkins'] = strip_tags(substr($foursquare, $checkins_start, $checkins_stop-$checkins_start));
 
-            \Cache::set('foursquare', $data, 600);
+            \Cache::set('foursquare', $data, 5 * 60 * 60);
         }
         
         $this->response->body = \View::factory('foursquare', $data);

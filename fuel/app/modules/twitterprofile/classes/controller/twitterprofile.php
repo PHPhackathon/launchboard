@@ -27,7 +27,7 @@ class Controller_Twitterprofile extends \Controller_LaunchBoard {
               
         if(!$twitterprofile = \Cache::get('twitterprofile')){
             $twitterprofile = $this->_fetch_twitterprofile($this->profile);
-            \Cache::set('twitterprofile', $twitterprofile, 60);
+            \Cache::set('twitterprofile', $twitterprofile, 5 * 60 * 60);
         }
         
         $data['twitterprofile'] = $twitterprofile;

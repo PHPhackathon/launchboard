@@ -18,7 +18,7 @@ class Controller_Dilbert extends \Controller_LaunchBoard {
         
         if(true || !$image = \Cache::get('image')){
             $image = $this->_fetchDilbert();
-            \Cache::set('image', $image, 60);
+            \Cache::set('image', $image, 5 * 60 * 60);
         }
         
         $data['image'] = $image;

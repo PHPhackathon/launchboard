@@ -27,7 +27,7 @@ class Controller_Twitterhash extends \Controller_LaunchBoard {
               
         if(!$twitterhash = \Cache::get('twitterhash')){
             $twitterhash = $this->_fetch_twitterhash($this->hashtag);
-            \Cache::set('twitterhash', $twitterhash, 60);
+            \Cache::set('twitterhash', $twitterhash, 5 * 60 * 60);
         }
         
         $data['twitterhash'] = $twitterhash;
