@@ -32,7 +32,7 @@ $(document).ready(function() {
     analyticsChart = new Highcharts.Chart({
         chart: {
             renderTo: 'analytics_chart',
-            defaultSeriesType: 'line'
+            defaultSeriesType: 'line',
             height: 350
         },
         legend: {
