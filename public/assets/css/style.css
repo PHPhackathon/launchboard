@@ -161,12 +161,11 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
-
 body { background: transparent url(../img/bg.png) repeat 0 0; width: 848px; overflow: hidden; padding: 5px; margin: 0 auto; }
 
 /* default box styles */
 .launchboard { width: 100%; position: relative; }
-.box { display: block; float: left; text-align: center; line-height: 200px; margin: 5px; border: none; background: #1a1a1b; overflow: hidden; color: #D3D4D4; border: 1px solid #000; text-align: left;
+.box { display: block; float: left; text-align: center; margin: 5px; border: none; background: #1a1a1b; overflow: hidden; color: #D3D4D4; border: 1px solid #000; text-align: left;
 	text-shadow: 1px 1px 1px #3F3F3F, -1px -1px 1px #3F3F3F;
 	background: -webkit-gradient(linear, left top, left bottom, from(#282a2c), to(#373b3d) ); }
 
