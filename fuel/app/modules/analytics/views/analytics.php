@@ -26,7 +26,7 @@ function reload() {
     window.location.reload();
 }
 
-setTimeout(reload, 120000);
+//setTimeout(reload, 120000);
 
 $(document).ready(function() {
     analyticsChart = new Highcharts.Chart({
@@ -73,7 +73,7 @@ $(document).ready(function() {
 <div id="module_analytics" class="box h_two w_four">
     <select id="select_analytics">
     <?php
-    var_dump($aUrls);
+    //var_dump($aUrls);
         foreach($aUrls as $sUrl => $sTableId) {
     ?>
             <option value="<?php echo $sUrl; ?>"><?php echo $sUrl; ?></option>
