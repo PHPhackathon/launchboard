@@ -1,7 +1,7 @@
 <!-- STYLE -->
 <style>
-    #module_dilbert { display: table-cell; vertical-align: middle; font-size:100%; line-height: 100%; font-size:150px; text-align: center; overflow: hidden; }
-    #module_dilbert img { margin-top: 20px; }
+    #module_dilbert { vertical-align: middle; font-size:100%; line-height: 100%; font-size:150px; text-align: center; overflow: hidden; }
+    #module_dilbert img { margin-top: 10px; }
 </style>
 <!-- /STYLE -->
 
