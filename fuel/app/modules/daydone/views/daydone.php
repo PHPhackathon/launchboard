@@ -1,11 +1,13 @@
 <!-- STYLE -->
 <style>
-    #module_daydone { display: table-cell; vertical-align: middle; font-size:100%; line-height: 100%; font-size:150px; text-align: center; overflow: hidden;  }
+    #module_daydone { vertical-align: middle; line-height: 150px; font-size:90px; text-align: center; overflow: hidden;  }
+    #module_daydone small { font-size: 110px; }
 </style>
 <!-- /STYLE -->
 
 <!-- CODE -->
 <div id='module_daydone' class='h_one w_one'>
-    <span><?php echo $answer ? 'JA' : 'NEEN'; ?></span>
+    <span class="heading">Can I go home?</span>
+    <?php echo $answer ? 'YES' : '<small>NO</small>'; ?>
 </div>
 <!-- /CODE -->
