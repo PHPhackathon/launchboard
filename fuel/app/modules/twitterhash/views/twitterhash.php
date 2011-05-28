@@ -1,22 +1,23 @@
 <!-- STYLE -->
 <style>
-    #module_twitterhash { display: table-cell; vertical-align: middle; font-size:100%; background: red; height: 410px; width: 410px; line-height: 100%;}
-    #module_twitterhash .tweet { display: block; overflow: hidden; height: 84px;}
-    #module_twitterhash img { float: left; margin-bottom: 5px; margin-right: 5px; }
-    #module_twitterhash .title { display: block; float:left; font-size: 18px;  font-weight: bold; }
-    #module_twitterhash .txt { display: block; float:left;  margin-top: 5px; width: 85%;}
-    #module_twitterhash .date { display: bloxk;}
+    #module_twitterhash { display: table-cell; font-size:100%; line-height: 100%; text-align: left; }
+    #module_twitterhash .tweet { display: block; overflow: hidden; height: 64px; padding: 4px 10px; }
+    #module_twitterhash img { float: left; margin: 3px 10px 0 0; border: 1px solid #000; }
+    #module_twitterhash .title { font-size: 18px; line-height: 18px; font-weight: bold; }
+    #module_twitterhash .txt { margin-top: 5px; width: 85%; text-align: left; line-height: 18px; }
+    #module_twitterhash .date { display: bloxk; }
 </style>
 <!-- /STYLE -->
 
 <!-- CODE -->
-<div id='module_twitterhash' class='h.two w_one'>
+<div id='module_twitterhash' class='h_two w_two'>
+    <span class="heading">#<? echo $hashtag ?></span>
     <?php
     foreach($twitterhash as $tweet){
-        echo "<div class='tweet'>";
+        echo "<div class='tweet clearfix'>";
             echo "<img src='".$tweet->profile_image_url."' alt='".$tweet->from_user."' />";
-            echo "<span class='title'>@".$tweet->from_user."</span>";
-            echo "<span class='txt'>".$tweet->text."</span>";
+            echo "<span class='title'>@".$tweet->from_user.":</span>";
+            echo " <span class='txt'>".$tweet->text."</span>";
         echo "</div>";
     }
     ?>
