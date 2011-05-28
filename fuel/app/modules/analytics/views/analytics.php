@@ -30,9 +30,9 @@ $(document).ready(function() {
             defaultSeriesType: 'line',
             backgroundColor: 'transparant'
         },
-        colors: {
+        colors: [
             '#DB843D'
-        },
+        ],
         legend: {
            enabled: false
         },
