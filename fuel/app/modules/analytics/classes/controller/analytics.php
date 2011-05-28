@@ -15,7 +15,7 @@ class Controller_Analytics extends \Controller_LaunchBoard {
      * @return  void
      */
     public function action_index() {
-die();
+
        session_start();
 
        $pAnalytics = new Library_Ganalytics();
@@ -28,11 +28,9 @@ die();
            die();
            
        } else if (isset($_GET['reset'])) {
-       
            session_destroy();
            header('Location: /analytics');
            die();
-           
        } else if(isset($_GET[ 'site' ])) {
        
            if(isset($_SESSION['refresh_token'])) {
@@ -54,7 +52,7 @@ die();
         } else if(!isset($_SESSION['refresh_token'])){
             $this->response->body = \View::factory('noaccounts');
         } else {
-            if(isset($_SESSION['urls']) && is_array($_SESSION['urls'])) {
+            if(isset($_SESSION['urls']) && count($_SESSION['urls']) >= 1) {
                 $data['aUrls'] = $_SESSION['urls'];
                 $this->response->body = \View::factory('analytics', $data);
             } else {
