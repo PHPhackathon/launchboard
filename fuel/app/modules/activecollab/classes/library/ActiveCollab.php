@@ -118,7 +118,7 @@ class Library_Activecollab
 					$project->progress = ($total_tasks > 0 ? round(($completed_tasks / $total_tasks)*100) : 0);
 				}
 				
-				\Cache::set('activecollab', $projects, 1800);
+				\Cache::set('activecollab', $projects, 5 * 60 * 60);
 			}
 		}
 		
