@@ -73,7 +73,7 @@ $(document).ready(function() {
     var_dump($aUrls);
         foreach($aUrls as $sUrl => $sTableId) {
     ?>
-            <option value="<?=$sUrl?>"><?=$sUrl?></option>
+            <option value="<?php echo $sUrl; ?>"><?php echo $sUrl; ?></option>
     <?php
         } // end foreach
     ?>
