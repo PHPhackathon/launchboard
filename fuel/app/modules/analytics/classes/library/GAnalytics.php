@@ -25,7 +25,7 @@ class Library_Ganalytics
      *
      * @var string the URL that will be used by Facebook to redirect the user
      */
-    protected static $_callbackUrl = 'http://srvr.tomclaus.be/analytics/';
+    protected static $_callbackUrl = 'http://launchboard.phphackathon.be//analytics/';
     
     /* By calling this function the user will be redirected
      * to Facebook to start the authentication process.
