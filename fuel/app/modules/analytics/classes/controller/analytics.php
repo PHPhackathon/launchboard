@@ -52,8 +52,8 @@ class Controller_Analytics extends \Controller_LaunchBoard {
         } else if(!isset($_SESSION['refresh_token'])){
             $this->response->body = \View::factory('noaccounts');
         } else {
-            if(isset($_SESSION['urls']) && count($_SESSION['urls']) >= 1) {
-                $data['aUrls'] = $_SESSION['urls'];
+            if(isset($_SESSION['urls']) && is_array($_SESSION['urls'])) {
+                $data['aUrls'] = $_SESSION['urls'];var_dump(count($_SESSION['urls']));
                 $this->response->body = \View::factory('analytics', $data);
             } else {
                $this->response->body = \View::factory('emptyaccount');
