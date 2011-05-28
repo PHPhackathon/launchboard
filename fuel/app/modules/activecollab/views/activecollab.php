@@ -6,7 +6,7 @@
     .column {min-width:40px; bottom:0; position:absolute;}
     .legend {height:40px; bottom:5px; position:absolute; text-align:center;}
     .legend img {display: block; margin: 0 auto; }
-    .line {border-bottom:1px solid #444; width:810px; position:absolute; left:5px; color:#eee; height:15px; font-size:12px; z-index: 8; overflow: hidden; line-height: 15px;}
+    .line {border-bottom:1px solid #d0d0d0; width:810px; position:absolute; left:5px; color:#303030; height:15px; font-size:12px; z-index: 8; overflow: hidden; line-height: 15px;}
 </style>
 <!-- /STYLE -->
 
