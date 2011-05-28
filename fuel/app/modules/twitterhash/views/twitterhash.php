@@ -11,7 +11,7 @@
 
 <!-- CODE -->
 <div id='module_twitterhash' class='h_two w_two'>
-    <span class="heading">#<? echo $hashtag ?></span>
+    <span class="heading">#<?php echo $hashtag ?></span>
     <?php
     foreach($twitterhash as $tweet){
         echo "<div class='tweet clearfix'>";
