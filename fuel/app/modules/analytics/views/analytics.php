@@ -32,11 +32,6 @@ $(document).ready(function() {
             height: 175,
             width: 405
         },
-        labels: {
-            style: {
-                display: 'none'
-            }
-        },
         colors: [
             '#DB843D'
         ],
@@ -48,15 +43,21 @@ $(document).ready(function() {
         },
         xAxis: {
             categories: [],
-                labels: {
-                rotation: 280,
-                align: 'right'
+            labels: {
+                style: {
+                    display: 'none'
+                }
             }
         },
         yAxis: {
              allowDecimals: false,
              title: {
                 text: ''
+            },
+            labels: {
+                style: {
+                    display: 'none'
+                }
             }
         },
         series: [{
