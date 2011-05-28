@@ -31,7 +31,7 @@ class Controller_Rss extends \Controller_LaunchBoard {
             \Cache::set('rss', $rss, 1800);
         }
         
-        $data['rss'] = $rss;
+        $data['rss'] = $rss[rand(0, count($rss)-1)];
         $data['rssTitel'] = $this->rssTitel;
         $this->response->body = \View::factory('rss', $data);
     }
