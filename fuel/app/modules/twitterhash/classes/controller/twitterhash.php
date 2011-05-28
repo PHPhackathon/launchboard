@@ -10,26 +10,54 @@ namespace Twitterhash;
 class Controller_Twitterhash extends \Controller_LaunchBoard {
 
     /**
+     * Twitetr Hashtag to search for
+     * 
+     * @access  private
+     * @var     string 
+     */
+    private $hastag = 'phphackathon';
+    
+    /**
      * The default view action for our module.
      * 
      * @access  public
      * @return  void
      */
     public function action_index() {
-                
-        // try to retrieve the cache and save to $content var
-        
-        if(!$content = \Cache::get('test')){
-            $content = 'String to be cached'.date('H:i:s');
-            \Cache::set('test', $content, 10);
+              
+        if(!$twitterhash = \Cache::get('twitterhash')){
+            $twitterhash = $this->_fetch_twitterhash($this->hastag);
+            \Cache::set('twitterhash', $twitterhash, 60);
         }
- 
         
-        var_dump($content);
+        $data['twitterhash'] = $twitterhash;
+        $this->response->body = \View::factory('twitterhash', $data);
+    }
+    
+    
+    /**
+     * Fetch Twitter results for Hashtag.
+     * 
+     * @access  private
+     * @param   param $hashtag
+     * @return  void
+     */
+    private function _fetch_twitterhash($hashtag = ''){
         
-        //$data['time'] = date('H:i');
-        
-       // $this->response->body = \View::factory('twitterhash', $data);
+        try{
+            $url ='http://search.twitter.com/search.json?tag='.$hashtag.'&rpp=5';
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_USERAGENT, "LaunchBoard Mozilla Parl");
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+            $output = json_decode(curl_exec($ch));
+            curl_close($ch);
+            return $output->results;
+        }  catch (Exeption $e){
+            return null;
+        }        
     }
 
 }
