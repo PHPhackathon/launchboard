@@ -27,6 +27,7 @@ class Library_Ganalytics
      */
     protected static $_callbackUrl = 'http://launchboard.phphackathon.be/analytics/';
     
+    
     /* By calling this function the user will be redirected
      * to Facebook to start the authentication process.
      *
@@ -220,7 +221,7 @@ class Library_Ganalytics
         $sStartDate = date('Y-m-d', $nEndDate);
 
         /* Send request to the API and get the response */    
-        $sContent = file_get_contents( 'https://www.google.com/analytics/feeds/data?ids=' . urlencode($_SESSION['urls'][$sUrl]) . '&dimensions=ga%3Adate&metrics=ga%3Avisitors&start-date=' . urlencode($sStartDate) . '&end-date=' . urlencode($sEndDate) . '&max-results=500&oauth_token=' . urlencode($_SESSION[ 'access_token' ]));
+        $sContent = file_get_contents( 'https://www.google.com/analytics/feeds/data?ids=' . urlencode('ga:36582140') . '&dimensions=ga%3Adate&metrics=ga%3Avisitors&start-date=' . urlencode($sStartDate) . '&end-date=' . urlencode($sEndDate) . '&max-results=500&oauth_token=' . urlencode($_SESSION[ 'access_token' ]));
 
         $nStatusCode = $this->_getStatusCode($http_response_header);
 

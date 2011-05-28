@@ -11,18 +11,23 @@ $(function() {
 	
 	// autoload widgets
 	load_widget('activecollab', 60 * 60 * 1000);
-	load_widget('analytics', 60 * 60 * 1000);
+	//load_widget('analytics', 60 * 60 * 1000);
 	load_widget('time', 60 * 1000);
-	load_widget('facebooklikes', 60 * 1000);
+	load_widget('calendar', 60 * 1000);
+	load_widget('birthdays', 60 * 1000);
 	load_widget('twitterhash', 60 * 1000);
 	load_widget('rainer', 60 * 1000);
 	load_widget('flickr', 60 * 1000);
 	load_widget('daydone', 60 * 1000);
 	load_widget('weather', 60 * 1000);
 	load_widget('dilbert', 60 * 1000);
+<<<<<<< HEAD
 	load_widget('calendar', 60 * 1000);
 	load_widget('birthdays', 60 * 1000);
 	load_widget('rss', 60 * 1000);
+=======
+	load_widget('facebooklikes', 60 * 1000);
+>>>>>>> 53641c5b58c3809974a71931fc61140ad64922f9
 });
 
 var load_widget = function(selectedWidget, refreshRate) {

@@ -1,13 +1,14 @@
 <!-- STYLE -->
 <style>
-    #module_calendar { display: table-cell; font-size:100%; line-height: 100%; width: 200px; height: 200px; text-align: left; background: red; }
-    #module_calendar .title { font-weight: bold;}
+    #module_calendar { font-size:100%; line-height: 100%; text-align: left; line-height: 18px; }
+    #module_calendar .title { font-weight: bold; display: block; margin: 10px 0 0 10px; }
+    #module_calendar .summary { padding-left: 10px; }
 </style>
 <!-- /STYLE -->
 
 <!-- CODE -->
-<div id='module_calendar' class='h_two w_one'>
-    <span class="heading">Calendar <?php echo $title; ?></span>
+<div id='module_calendar' class='h_one w_one'>
+    <span class="heading">Calendar</span>
     <?php
     foreach($events as $event){ 
         echo "<div class='event'>";
