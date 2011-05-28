@@ -46,7 +46,7 @@ class Controller_Flickr extends \Controller_LaunchBoard {
             $search = $this->_fetch_photos($this->search);         
             $photos = $search['photos']['photo'];
             foreach($photos as &$photo){
-                $photo['url'] = 'http://farm'.$photo["farm"].'.static.flickr.com/'.$photo["server"].'/'.$photo["id"].'_'.$photo["secret"].'_m.jpg';
+                $photo['url'] = 'http://farm'.$photo["farm"].'.static.flickr.com/'.$photo["server"].'/'.$photo["id"].'_'.$photo["secret"].'.jpg';
             }       
             \Cache::set('flickr', $photos, 60);
         }
