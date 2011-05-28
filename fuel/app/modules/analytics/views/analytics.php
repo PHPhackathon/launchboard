@@ -33,6 +33,7 @@ $(document).ready(function() {
         chart: {
             renderTo: 'analytics_chart',
             defaultSeriesType: 'line'
+            height: 350
         },
         legend: {
            enabled: false
@@ -44,6 +45,7 @@ $(document).ready(function() {
             categories: [],
                 labels: {
                 rotation: 280,
+                width: 800,
                 align: 'right'
             }
         },
@@ -67,7 +69,7 @@ $(document).ready(function() {
 <!-- /JS -->
 
 <!-- CODE -->
-<div id="module_analytics" class="box h_one w_four">
+<div id="module_analytics" class="box h_two w_four">
     <select id="select_analytics">
     <?php
     var_dump($aUrls);
