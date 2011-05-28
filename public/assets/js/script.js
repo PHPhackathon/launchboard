@@ -18,15 +18,11 @@ $(function() {
 	});
 	
 	// autoload widgets
-	load_widget('w_four h_one');
-	load_widget('w_one h_two');
 	load_widget('time', 60 * 1000);
-	load_widget('w_one h_one');
-	load_widget('w_one h_one');
-	load_widget('w_two h_one');
+	load_widget('twitterhash', 60 * 1000);
 });
 
-var load_widget = function(selectedWidget, refreshRate, replaceBy) {
+var load_widget = function(selectedWidget, refreshRate) {
 	if (!refreshRate) refreshRate = 1000;
 	
 	// setup basic element
@@ -38,23 +34,19 @@ var load_widget = function(selectedWidget, refreshRate, replaceBy) {
 		case "whitespace":
 			el.addClass('whitespace h_one w_one');
 			break;
-		case "time":
-			el.addClass('w_two h_one');
-			el.load('/time');
-			setInterval(function() {
-				el.load('/time');
-			}, refreshRate);
 			
-		// debug
 		default:
-			el.addClass(selectedWidget);
+			el.load('/'+selectedWidget, function() {
+				el.fadeOut(0).delay(config.delay * config.container.children('.box').length).fadeIn('slow').fadeIn();
+			});
+			setInterval(function() {
+				el.load('/'+selectedWidget);
+			}, refreshRate);
+			break;
 	}
 	
 	// add the element
-	if (!replaceBy) {
-		el.appendTo(config.container);
-	}
-	el.fadeOut(0).delay(config.delay * config.container.children('.box').length).fadeIn();
+	el.appendTo(config.container);
 }
 
 $(document).bind('touchmove', function(e) {

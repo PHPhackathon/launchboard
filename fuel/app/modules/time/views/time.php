@@ -1,6 +1,6 @@
 <!-- STYLE -->
 <style>
-    #module_time { display: table-cell; vertical-align: middle; font-size:100%; background: red; line-height: 100%; font-size:150px; text-align: center; overflow: hidden; }
+    #module_time { display: table-cell; vertical-align: middle; font-size:100%; line-height: 100%; font-size:150px; text-align: center; overflow: hidden; }
 </style>
 <!-- /STYLE -->
 
