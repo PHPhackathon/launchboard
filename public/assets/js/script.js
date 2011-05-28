@@ -61,7 +61,3 @@ var load_widget = function(selectedWidget, refreshRate) {
 		el.delay(config.startDelay + (config.delay * config.container.children('.box').length)).slideUp(0).slideDown('slow');
 	}
 }
-
-$(document).bind('touchmove', function(e) {
-   e.preventDefault();
-}, false);
