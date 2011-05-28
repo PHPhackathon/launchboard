@@ -33,8 +33,7 @@ $(document).ready(function() {
         chart: {
             renderTo: 'analytics_chart',
             defaultSeriesType: 'line'
-            height: 350,
-            width: 800
+            height: 350
         },
         legend: {
            enabled: false

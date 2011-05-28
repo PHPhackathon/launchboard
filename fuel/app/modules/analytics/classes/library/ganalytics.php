@@ -1,7 +1,7 @@
 <?php
 
 namespace Analytics;
-
+ 
 class Library_Ganalytics
 {
 
