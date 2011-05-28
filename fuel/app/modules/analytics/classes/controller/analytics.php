@@ -52,10 +52,12 @@ class Controller_Analytics extends \Controller_LaunchBoard {
         } else if(!isset($_SESSION['refresh_token'])){
             $this->response->body = \View::factory('noaccounts');
         } else {
-        
-            $data['aUrls'] = $_SESSION['urls'];
-        
-            $this->response->body = \View::factory('analytics', $data);
+            if(isset($_SESSION['urls'])) {
+                $data['aUrls'] = $_SESSION['urls'];
+                $this->response->body = \View::factory('analytics', $data);
+            } else {
+               $this->response->body = \View::factory('emptyaccount');
+            }
         }
     }
 

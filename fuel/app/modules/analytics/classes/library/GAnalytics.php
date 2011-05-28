@@ -2,7 +2,7 @@
 
 namespace Analytics;
 
-class Library_GAnalytics
+class Library_Ganalytics
 {
 
     /* The application/client ID is a unique number assigned
