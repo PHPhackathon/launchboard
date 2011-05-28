@@ -30,8 +30,8 @@ class Controller_Rss extends \Controller_LaunchBoard {
             $rss = $this->_fetchRss($this->url);
             \Cache::set('rss', $rss, 1800);
         }
-        
-        $data['rss'] = $rss[rand(0, count($rss)-1)];
+        $total = count($rss)-1;
+        $data['rss'] = $rss[rand(0, $total)];
         $data['rssTitel'] = $this->rssTitel;
         $this->response->body = \View::factory('rss', $data);
     }
