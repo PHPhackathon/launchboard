@@ -24,12 +24,12 @@ class Controller_Analytics extends \Controller_LaunchBoard {
         
            $pAnalytics->getRefreshToken($_GET[ 'code' ]);
            $pAnalytics->getAccounts();
-           header('Location: /analytics');
+           //header('Location: /analytics');
            die();
            
        } else if (isset($_GET['reset'])) {
            session_destroy();
-           header('Location: /analytics');
+           //header('Location: /analytics');
            die();
        } else if(isset($_GET[ 'site' ])) {
        
@@ -52,7 +52,7 @@ class Controller_Analytics extends \Controller_LaunchBoard {
         } else if(!isset($_SESSION['refresh_token'])){
             $this->response->body = \View::factory('noaccounts');
         } else {
-            if(isset($_SESSION['urls'])) {
+            if(isset($_SESSION['urls']) && count($_SESSION['urls']) > 0) {
                 $data['aUrls'] = $_SESSION['urls'];
                 $this->response->body = \View::factory('analytics', $data);
             } else {
