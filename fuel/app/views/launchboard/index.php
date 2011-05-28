@@ -9,7 +9,8 @@
   <title>LaunchBoard v0.1</title>
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=850, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
   <!-- CSS: implied media="all" -->
   <link rel="stylesheet" href="/assets/css/style.css?v=2">
